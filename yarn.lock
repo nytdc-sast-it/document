@@ -326,13 +326,26 @@
     "@vuepress/utils" "2.0.0-beta.27"
     chokidar "^3.5.2"
 
-"@vuepress/plugin-prismjs@2.0.0-beta.27":
+"@vuepress/plugin-prismjs@2.0.0-beta.27", "@vuepress/plugin-prismjs@^2.0.0-beta.27":
   version "2.0.0-beta.27"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-prismjs/-/plugin-prismjs-2.0.0-beta.27.tgz#99b4197f60f4026e32ac1b290d36b20329f60d60"
   integrity sha512-QKfwh23PsbwcYDxPLUw+Jwq0KliOGP4yCOZ6rQ1/MxbxP2od8vsfv2oAcyaAeg4ReRz7kdT/SPvD5hf+OWSd1Q==
   dependencies:
     "@vuepress/core" "2.0.0-beta.27"
     prismjs "^1.25.0"
+
+"@vuepress/plugin-search@^2.0.0-beta.27":
+  version "2.0.0-beta.27"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.27.tgz#39ea9282709e4b275d801b8397b281190c818e0b"
+  integrity sha512-22r2nVD55CnraQZOnzEsIueg6iXWIsutcw54UVbQFmgQxmAEEa8ZQ4YQ/W91IQepis1qdinynWvJGPLI6IHSOg==
+  dependencies:
+    "@vuepress/client" "2.0.0-beta.27"
+    "@vuepress/core" "2.0.0-beta.27"
+    "@vuepress/shared" "2.0.0-beta.27"
+    "@vuepress/utils" "2.0.0-beta.27"
+    chokidar "^3.5.2"
+    vue "^3.2.20"
+    vue-router "^4.0.12"
 
 "@vuepress/plugin-theme-data@2.0.0-beta.27":
   version "2.0.0-beta.27"
