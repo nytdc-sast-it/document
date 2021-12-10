@@ -1,0 +1,16 @@
+{
+  "name": "tdsast-document",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tdsast-unofficial/document.git",
+  "author": "Taoning Ge <gtn1024o@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^2.0.0-beta.27",
+    "vuepress-vite": "^2.0.0-beta.27"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
