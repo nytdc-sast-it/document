@@ -10,7 +10,7 @@ export default {
       let utterances = window.document.createElement("script");
       utterances.type = "text/javascript";
       utterances.async = true;
-      utterances.setAttribute("issue-term", "pathname");
+      utterances.setAttribute("issue-term", "title");
       utterances.setAttribute("theme", "github-light");
       utterances.setAttribute("repo", "tdsast-unofficial/document");
       utterances.setAttribute("label", "document-comment");
