@@ -2,6 +2,8 @@ import { defineUserConfig } from "vuepress-vite";
 import type { DefaultThemeOptions } from "vuepress-vite";
 import { navbar, sidebar } from "./configs";
 
+import { path } from "@vuepress/utils";
+
 const isProd = process.env.NODE_ENV === "production";
 
 export default defineUserConfig<DefaultThemeOptions>({
@@ -55,6 +57,14 @@ export default defineUserConfig<DefaultThemeOptions>({
           "/": {
             placeholder: "搜索",
           },
+        },
+      },
+    ],
+    [
+      "@vuepress/register-components",
+      {
+        components: {
+          Utterances: path.resolve(__dirname, "./components/Utterances.vue"),
         },
       },
     ],
