@@ -2,6 +2,7 @@
 
 ## 目录
 
-TODO...
+- **开始之前**
+  - [Java 简介](intro-introduction-of-java.md)
 
 <Utterances />
