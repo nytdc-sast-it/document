@@ -22,6 +22,7 @@ footer: Copyright © 2021 TDSAST.ORG
 <br>
 
 <div align="center">
-<a href="https://www.aliyun.com/minisite/goods?userCode=e0ksog3m" target="_blank"><img src="/assets/img/aliyun.png" alt="DigitalOcean Referral Badge" /></a>
+<a href="https://cloud.tencent.com/act/cps/redirect?redirect=1077&cps_key=0bf524a2bd69e68e98d9f0af95de4fbd&from=console" target="_blank"><img src="/assets/img/qcloud.png" alt="Tencent Cloud" /></a>
+<a href="https://www.aliyun.com/minisite/goods?userCode=e0ksog3m" target="_blank"><img src="/assets/img/aliyun.png" alt="Aliyun" /></a>
 <a href="https://www.digitalocean.com/?refcode=621613ad76f8&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank"><img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg" alt="DigitalOcean Referral Badge" /></a>
 </div>
