@@ -6,6 +6,7 @@
 - **开始之前**
   - [Java 简介](intro-introduction-of-java.md)
   - [如何安装 Java](intro-how-to-install-java.md)
+  - [第一个 Java 程序](intro-the-first-program.md)
 
 ## 前言
 

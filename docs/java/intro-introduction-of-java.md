@@ -18,7 +18,7 @@ Java 的诞生可以说是对于 C/C++ 语言的反抗。其没有 C 语言的�
 
 最初该编程语言的命名为`C++--`，即在 C++的基础上做一些改进。后来创始人发现设计理念差别太大，故将其命名为`Oak`。待编程语言发布的时候，发现 Oak 商标已被别人使用，最终命名 `Java`。
 
-Java 逐步出名之后，一些商业巨头（如 [Oracle](https://www.oracle.com/index.html)、[Microsoft](https://www.microsoft.com/zh-cn/)）纷纷与 Java 合作。其中 [Bill Gates](https://en.wikipedia.org/wiki/Bill_Gates)（微软创始人） 称 Java 是迄今为止设计得最好的语言。
+Java 逐步出名之后，一些商业巨头（如 [Oracle](https://www.oracle.com/index.html)、[Microsoft](https://www.microsoft.com/zh-cn/)）纷纷与 Java 合作。其中 [Bill Gates](https://baike.baidu.com/item/%E6%AF%94%E5%B0%94%C2%B7%E7%9B%96%E8%8C%A8/83241)（微软公司创始人） 称 Java 是迄今为止设计得最好的语言。
 
 2006 年 [Hadoop](https://hadoop.apache.org/) 框架的出现，使得 Java 进军大数据领域。
 
