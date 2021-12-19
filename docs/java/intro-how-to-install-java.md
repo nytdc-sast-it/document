@@ -24,10 +24,10 @@
 
 ### 环境变量配置
 
+[如何设置系统环境变量](../articles/a-how-to-set-system-env-var.md)
+
 1. 添加`JAVA_HOME`，指向`C:\Develop\jdk-17`
 2. 在`Path`变量中加入`%JAVA_HOME%\bin`
-
-**TODO: 如何添加环境变量**
 
 ## macOS 平台
 
