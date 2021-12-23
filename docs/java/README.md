@@ -4,9 +4,10 @@
 
 - [前言](#前言)
 - **开始之前**
-  - [Java 简介](intro-introduction-of-java.md)
-  - [如何安装 Java](intro-how-to-install-java.md)
-  - [第一个 Java 程序](intro-the-first-program.md)
+  - [Java 简介](./intro-introduction-of-java.md)
+  - [如何安装 Java](./intro-how-to-install-java.md)
+  - [第一个 Java 程序](./intro-the-first-program.md)
+  - [使用 IDE](./intro-use-ide.md)
 
 ## 前言
 

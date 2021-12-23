@@ -4,7 +4,12 @@ export const zh: SidebarConfig = {
   "/java/": [
     {
       text: "开始之前",
-      children: ["intro-introduction-of-java.md", "intro-how-to-install-java.md", "intro-the-first-program.md"],
+      children: [
+        "intro-introduction-of-java.md",
+        "intro-how-to-install-java.md",
+        "intro-the-first-program.md",
+        "intro-use-ide.md",
+      ],
     },
   ],
   "/articles/": [
