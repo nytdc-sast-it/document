@@ -16,6 +16,7 @@ export const zh: SidebarConfig = {
     {
       text: "必备技能",
       children: [
+        "a-how-to-ask-questions.md",
         "a-how-to-sign-up-a-github-account.md",
         "a-how-to-set-system-env-var.md",
         "a-how-to-modify-system-hosts.md",
