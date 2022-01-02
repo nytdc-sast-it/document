@@ -4,11 +4,11 @@
 
 在本文中，将为大家推荐 3 款主流 Java 开发 IDE。其分别为：
 
-- [JetBrains IntelliJ IDEA](https://www.jetbrains.com/idea/)
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 - [Eclipse IDE](https://www.eclipse.org/eclipseide/)
-- [Microsoft Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
-## JetBrains IntelliJ IDEA
+## IntelliJ IDEA
 
 待更新
 
@@ -16,7 +16,7 @@
 
 待更新
 
-## Microsoft Visual Studio Code
+## Visual Studio Code
 
 待更新
 
