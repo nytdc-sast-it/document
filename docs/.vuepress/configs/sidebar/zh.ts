@@ -22,6 +22,7 @@ export const zh: SidebarConfig = {
         "a-how-to-set-system-env-var.md",
         "a-how-to-modify-system-hosts.md",
         "a-how-to-display-filename-extension.md",
+        "a-how-to-get-chsi-code",
         {
           text: "基础内容",
           collapsible: true,
