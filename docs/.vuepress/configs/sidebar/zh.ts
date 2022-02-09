@@ -40,5 +40,11 @@ export const zh: SidebarConfig = {
         },
       ],
     },
+    {
+      text:"编程语言",
+      children:[
+        "lang-how-advanced-lang-exec.md"
+      ]
+    }
   ],
 };

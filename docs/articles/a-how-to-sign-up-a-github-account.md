@@ -1,7 +1,5 @@
 # 如何注册 GitHub 账号
 
-本文来源：[https://www.getaoning.com/archives/242](https://www.getaoning.com/archives/242)
-
 打开 [GitHub](https://github.com)官网，点击右上角的**Sign up**，进入注册页面。
 
 ![16312833804153.jpg](./img/a-how-to-sign-up-a-github-account/16312833804153.jpg)

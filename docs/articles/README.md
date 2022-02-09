@@ -23,3 +23,7 @@
     - [持续集成](./a-basic-ci.md)
     - [开源协议](./a-basic-license.md)
     - [开源与免费](./a-basic-open-source-and-free.md)
+
+- **编程语言**
+
+  - [计算机高级语言的执行方式](./lang-how-advanced-lang-exec.md)
