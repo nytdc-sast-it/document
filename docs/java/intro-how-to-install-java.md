@@ -63,5 +63,3 @@ java version "17" 2021-09-14 LTS
 Java(TM) SE Runtime Environment (build 17+35-LTS-2724)
 Java HotSpot(TM) 64-Bit Server VM (build 17+35-LTS-2724, mixed mode, sharing)
 ```
-
-<Utterances />

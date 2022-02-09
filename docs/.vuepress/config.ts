@@ -71,7 +71,6 @@ export default defineUserConfig<DefaultThemeOptions>({
       "@vuepress/register-components",
       {
         components: {
-          Utterances: path.resolve(__dirname, "./components/Utterances.vue"),
         },
       },
     ],

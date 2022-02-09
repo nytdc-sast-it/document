@@ -19,7 +19,7 @@ public class Hello {
 ```bash
 $ javac Hello.java
 $ ls
-Hello.class	Hello.java
+Hello.class Hello.java
 ```
 
 接下来，输入`java Hello`，你将看到以下输出：
@@ -60,5 +60,3 @@ Java 源代码本质上是一个纯文本文件，我们通过`javac`命令将�
 大概的运行机制如下图所示：
 
 ![Java relationship](./img/intro-the-first-program/how-java-works.png)
-
-<Utterances />

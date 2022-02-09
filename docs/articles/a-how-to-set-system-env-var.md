@@ -41,5 +41,3 @@
 ### 永久修改
 
 在登录用户的`~/.bash_profile`（`bash`用户）或`~/.zprofile`（`zsh`用户）文件最后加入在上方**临时修改**中执行的命令即可。
-
-<Utterances />

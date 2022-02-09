@@ -17,5 +17,3 @@
 打开资源管理器，点击上方**查看**选项卡，选中**文件扩展名**即可。
 
 ![10](./img/a-how-to-display-filename-extension/10.png)
-
-<Utterances />

@@ -49,5 +49,3 @@ Java 主要有 3 个版本：
 下图为这三者的关系：
 
 ![Java relationship](./img/intro-introduction-of-java/java-relationship.png)
-
-<Utterances />

@@ -19,5 +19,3 @@
 ![xnix-1](./img/a-how-to-modify-system-hosts/xnix-1.png)
 
 ![xnix-2](./img/a-how-to-modify-system-hosts/xnix-2.png)
-
-<Utterances />

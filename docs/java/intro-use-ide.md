@@ -9,5 +9,3 @@
 - [Visual Studio Code](https://code.visualstudio.com/)
 
 当然，IDE 的选择因人而异，大家可以选择自己最喜欢的 IDE 即可。
-
-<Utterances />
