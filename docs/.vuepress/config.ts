@@ -15,7 +15,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   head: [["link", { rel: "stylesheet", href: "/assets/css/style.css" }]],
 
   themeConfig: {
-    repo: "tdsast-unofficial/document",
+    repo: "nytdc-sast/document",
     docsDir: "docs",
 
     navbar: navbar.zh,
