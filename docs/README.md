@@ -28,13 +28,3 @@ yarn              # 安装依赖
 yarn docs:dev     # 本地运行项目
 yarn docs:build   # 将项目构建为静态 HTML 文件
 ```
-
-## 本站使用的服务商
-
-<br>
-
-<div align="center">
-<a href="https://cloud.tencent.com/act/cps/redirect?redirect=1077&cps_key=0bf524a2bd69e68e98d9f0af95de4fbd&from=console" target="_blank"><img src="/assets/img/qcloud.png" alt="Tencent Cloud" /></a>
-<a href="https://www.aliyun.com/minisite/goods?userCode=e0ksog3m" target="_blank"><img src="/assets/img/aliyun.png" alt="Aliyun" /></a>
-<a href="https://www.digitalocean.com/?refcode=621613ad76f8&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank"><img src="/assets/img/digitalocean.svg" alt="DigitalOcean Referral Badge" /></a>
-</div>
