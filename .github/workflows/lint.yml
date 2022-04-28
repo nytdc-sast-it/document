@@ -1,0 +1,21 @@
+name: Build and Deploy
+
+on: [push, pull_request]
+
+env:
+  # 设置时区
+  TZ: Asia/Shanghai
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: markdownlint-cli
+        uses: nosborn/github-action-markdown-cli@v3.0.1
+        with:
+          files: "**/*.md"
+          config_file: .markdownlint.yaml
