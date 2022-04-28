@@ -4,11 +4,19 @@ export const zh: SidebarConfig = {
   "/java/": [
     {
       text: "开始之前",
+      // collapsible: true,
       children: [
-        "intro-introduction-of-java.md",
-        "intro-how-to-install-java.md",
-        "intro-the-first-program.md",
-        "intro-use-ide.md",
+        {
+          text: "Java 介绍及开发环境配置",
+          collapsible: true,
+          children: [
+            "intro-introduction-of-java.md",
+            "intro-java-runtime.md",
+            "intro-java-dev-env.md",
+            "intro-jdk-jre.md",
+            "intro-the-first-program.md",
+          ],
+        },
       ],
     },
   ],
@@ -41,10 +49,8 @@ export const zh: SidebarConfig = {
       ],
     },
     {
-      text:"编程语言",
-      children:[
-        "lang-how-advanced-lang-exec.md"
-      ]
-    }
+      text: "编程语言",
+      children: ["lang-how-advanced-lang-exec.md"],
+    },
   ],
 };
