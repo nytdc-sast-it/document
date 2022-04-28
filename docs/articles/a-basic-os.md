@@ -16,7 +16,8 @@
 
 3. 用户接口
 
-   操作系统需要为用户提供一种运行程序和访问文件系统的方法。如常用的 Windows 图形界面，可以理解为一种用户与操作系统交互的方式；智能手机的 Android 或 iOS 系统，也是一种操作系统的交互方式。
+   操作系统需要为用户提供一种运行程序和访问文件系统的方法。如常用的 Windows 图形界面，可以理解为一种用户与操作系统交互的方式；
+   智能手机的 Android 或 iOS 系统，也是一种操作系统的交互方式。
 
 4. 系统服务程序
 
@@ -26,4 +27,5 @@
 
 ![操作系统结构示意图](./img/a-basic-os/OS.gif)
 
-目前流行的服务器和 PC 端操作系统有 Linux、Windows、UNIX 等，手机操作系统有 Android、iOS，嵌入式操作系统有 Windows CE、PalmOS、eCos、uClinux 等。
+目前流行的服务器和 PC 端操作系统有 Linux、Windows、UNIX 等，手机操作系统有 Android、iOS，嵌入式操作系统有
+Windows CE、PalmOS、eCos、uClinux 等。

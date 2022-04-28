@@ -43,7 +43,8 @@ d:\wwwroot\html\photo\ours\d.html
 
 - 如何表示上级目录的文件
 
-  a.html 是 b.html 和 c.html 的上级目录中的文件，如果 b.html 或 c.html 链接到 a.html，可以在 b.html 或 c.html 中这样写:
+  a.html 是 b.html 和 c.html 的上级目录中的文件，如果 b.html 或 c.html 链接到 a.html，可以在 b.html 或
+  c.html 中这样写:
 
   ```html
   <a href="../a.html">链接到上级目录中的文件</a>
@@ -51,7 +52,8 @@ d:\wwwroot\html\photo\ours\d.html
 
   代码中的 `../` 代表一级上级目录(间隔一个目录)。
 
-  需要注意的是: “`../../`”代表二级上级目录(间隔两个目录)，比如 a.html 是 d.html 的前两级目录，同时 d.html 需要链接到 a.html，可以在 d.html 中这样写:
+  需要注意的是: “`../../`”代表二级上级目录(间隔两个目录)，比如 a.html 是 d.html 的前两级目录，同时 d.html 需要链接到
+  a.html，可以在 d.html 中这样写:
 
   ```html
   <a href="../../a.html">链接到上级目录的上级目录中的文件</a>

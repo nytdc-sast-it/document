@@ -7,7 +7,7 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  build-and-deploy:
+  markdown-lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

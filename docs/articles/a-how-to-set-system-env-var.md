@@ -36,7 +36,9 @@
 
 ### 临时修改
 
-如果你需要这次修改仅仅对当前的 shell 生效，则可以直接在当前的终端下执行`export 变量名="变量值"`，例如，设置`JAVA_HOME`环境变量可以执行`export JAVA_HOME="Java路径"`，设置`PATH`变量则可以执行`export PATH=添加的路径:$PATH`。注意，与 Windows 不同，Linux 和 macOS 使用的是**英文冒号**而不是**英文分号**。
+如果你需要这次修改仅仅对当前的 shell 生效，则可以直接在当前的终端下执行`export 变量名="变量值"`，例如，
+设置`JAVA_HOME`环境变量可以执行`export JAVA_HOME="Java路径"`，设置`PATH`变量则可以执行
+`export PATH=添加的路径:$PATH`。注意，与 Windows 不同，Linux 和 macOS 使用的是**英文冒号**而不是**英文分号**。
 
 ### 永久修改
 
