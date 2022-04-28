@@ -2,7 +2,8 @@
 
 ## 代码编写及运行
 
-首先，打开任意一个代码编辑器或 IDE（例如 [Sublime](https://www.sublimetext.com/)、[IntelliJ IDEA](https://www.jetbrains.com.cn/idea/)，**强烈不建议使用 Windows 自带的记事本，更不要使用 Word** ），输入以下代码：
+首先，打开任意一个代码编辑器或 IDE（例如 [Sublime](https://www.sublimetext.com/)、[IntelliJ IDEA](https://www.jetbrains.com.cn/idea/)，
+**强烈不建议使用 Windows 自带的记事本，更不要使用 Word** ），输入以下代码：
 
 ```java
 public class Hello {
@@ -12,7 +13,8 @@ public class Hello {
 }
 ```
 
-将其保存为`Hello.java`文件，打开终端（Windows 建议使用 [Powershell](https://docs.microsoft.com/en-us/powershell/) 或 [Git Bash](https://git-scm.com/download/win) ），定位到代码保存目录，输入`javac Hello.java`。
+将其保存为`Hello.java`文件，打开终端（Windows 建议使用 [Powershell](https://docs.microsoft.com/en-us/powershell/)
+或[Git Bash](https://git-scm.com/download/win) ），定位到代码保存目录，输入`javac Hello.java`。
 
 如果代码准确无误，则无任何输出。你将在当前目录下看到`Hello.class`的文件。
 
