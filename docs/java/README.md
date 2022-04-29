@@ -1,13 +1,12 @@
 # Java
 
-## 前言
+## 目录
 
-### 学习 Java 推荐的网站 / 书籍
+### 开始之前
 
-#### 网站
-
-- [字节传说 - 玩游戏学编程](https://bytelegend.com)
-
-#### 书籍
-
-- [疯狂 Java 讲义](https://union-click.jd.com/jdc?e=&p=JF8BAMUJK1olXDYCV1pdAUoUB19MRANLAjZbERscSkAJHTdNTwcKBlMdBgABFksUB28BGlgRQl9HCANtQwgfAShuUwh1BlJpFCYWcAl-VApgTVcZbQcyVF9cC04VBWsBHGslXQEyAjBdCUoWAm4NG14WbQcyVFlfAEMWBWcKGFkVVDYFVFdtUx55dQRLWCBQCXlcMgM9OHsnAF84K1slXjZAOg5aAUweUToPTF0cDgNXUAoNCh8eBmsMGlkSXQADBFgIOEkWAmsBKw)
+- Java 介绍及开发环境配置
+  - [Java 简介](./intro-introduction-of-java.md)
+  - [Java 运行机制](./intro-java-runtime.md)
+  - [Java 开发环境配置](./intro-java-dev-env.md)
+  - [JDK、JRE](./intro-jdk-jre.md)
+  - [第一个 Java 程序](./intro-the-first-program.md)
