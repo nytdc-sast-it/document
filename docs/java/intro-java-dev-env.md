@@ -34,12 +34,14 @@
   或 `~/Develop/java/jdk18/Contents/Home` (macOS 平台)
 - 在 `PATH` 中加入一条 `%JAVA_HOME%\bin`(Windows平台) 或 `$JAVA_HOME/bin`(Linux / macOS 平台)
 
-macOS 可通过 `/usr/libexec/java_home` 命令来获取 `JAVA_HOME` 路径
+macOS 可通过 `/usr/libexec/java_home -v 18` 命令来获取 `JAVA_HOME` 路径
 
 ![jdk-macos-home.png](./img/intro-java-dev-env/jdk-macos-home.png)
 
 :::tip
-在 macOS 系统上安装 Java 后，将会自动创建 `/usr/libexec/java_home`。
+
+1. 在 macOS 系统上安装 Java 后，将会自动创建 `/usr/libexec/java_home` 工具。
+2. `java_home` 工具可以使用 `-v [版本号]` 参数来指定需要获取 `JAVA_HOME` 的版本。
 :::
 
 ## 安装 IntelliJ IDEA
