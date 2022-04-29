@@ -20,4 +20,6 @@ Java 既不属于编译型语言也不属于解释型语言。Java 程序在编�
 
 ![java-runtime.png](./img/intro-java-runtime/java-runtime.png)
 
-> 市面上也存在将 Java 代码直接编译成机器码的技术，比如 Oracle 的 [GraalVM](https://www.graalvm.org)，但相对处于市场初期，故不在讨论范围之内。
+:::tip
+市面上也存在将 Java 代码直接编译成机器码的技术，比如 Oracle 的 [GraalVM](https://www.graalvm.org)，但相对处于市场初期，故不在讨论范围之内。
+:::
