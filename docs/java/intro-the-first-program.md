@@ -8,7 +8,7 @@
 我们第一个程序就从 jshell开始。
 
 :::tip
-如果你已安装 Java 并成功配置了 Java 的环境变量，那么可以在任意终端（如 macOS / Linux 上的 `Terminal`、
+如果你已安装 Java 并成功配置了 Java 的环境变量，那么可以在任意终端（如 macOS / Linux 上的 `Terminal`，
 Windows 上的 `cmd`、`Powershell`、`git-bash`）中输入 `jshell` 运行。
 :::
 
