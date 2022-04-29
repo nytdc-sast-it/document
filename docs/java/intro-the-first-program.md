@@ -1,64 +1,99 @@
 # 第一个 Java 程序
 
-## 代码编写及运行
+## 使用 jshell 编写第一个程序
 
-首先，打开任意一个代码编辑器或 IDE（例如 [Sublime](https://www.sublimetext.com/)、[IntelliJ IDEA](https://www.jetbrains.com.cn/idea/)，
-**强烈不建议使用 Windows 自带的记事本，更不要使用 Word** ），输入以下代码：
+从 Java 9 开始，JDK 内置了一个强大的 REPL(Read-Eval-Print Loop) 交互式工具，该工具是个交互式的命令行界面，
+可以用来执行 Java 的变量声明、语句和表达式，并且可以立即看到结果。
+
+我们第一个程序就从 jshell开始。
+
+:::tip
+如果你已安装 Java 并成功配置了 Java 的环境变量，那么可以在任意终端（如 macOS / Linux 上的 `Terminal`、
+Windows 上的 `cmd`、`Powershell`、`git-bash`）中输入 `jshell` 运行。
+:::
+
+在 jshell 工具中，输入 `System.out.println("Hello, World")`，即可得到 `Hello, World` 的字样。这就是我们
+使用 jshell 编写的第一个 Java 程序。
+
+![jshell.png](./img/intro-the-first-program/jshell.png)
+
+## 使用 IntelliJ IDEA 开发第一个程序
+
+IntelliJ IDEA 是目前 **最为强大**，使用 **最为广泛** 的 Java 开发工具，我们十分推荐初学者使用他。
+
+:::tip
+不推荐各初学者相信所谓 “初学阶段使用记事本” 的论调。
+:::
+
+在 [Java 开发环境配置](./intro-java-dev-env.md) 中，我们已经安装了 IntelliJ IDEA工具，打开之
+并点击界面上的 **New Project** 新建一个新的工程。
+
+![ij_idea_1.png](./img/intro-the-first-program/ij_idea_1.png)
+
+新建一个 Java 项目：
+
+- `Name`：项目名，主要作为标识
+- `Location`：项目存放位置，默认存放在当前用户目录的 `IdeaProjects` 目录下，可以修改为自己希望存放的位置。
+- `Create Git repository`：创建 Git 仓库，目前还未接触到 Git，故该选项可暂时忽略。
+- `Lanuage`：编程语言，你说选什么？
+- `Build system`：构建系统，通用起见，我们选择 `Maven`。关于 `Maven` 的知识将在后续的文章中讲到。
+- `JDK`：选择项目使用的 JDK 版本。
+- `Add sample code`：添加样例代码，选中后将在项目中自动添加 Hello World 代码。
+- `Advanced Settings`：高级设置
+  - `GroupId`：组名，通常为域名反写，此处目前而言默认即可
+  - `ArtifactId`：构建名称，可默认。
+
+填写完成后点击 `Create`(创建) 即可。
+
+![ij_idea_2.png](./img/intro-the-first-program/ij_idea_2.png)
+
+在 `src/main/java` 目录下右键，点击 `New - Java Class`，创建一个 Java 类。
+
+![ij_idea_3.png](./img/intro-the-first-program/ij_idea_3.png)
+
+在弹出的对话框中输入 `Hello`，确保下方选项选中 `Class`，即创建一个名为 `Hello`的 **类**。
+
+![ij_idea_4.png](./img/intro-the-first-program/ij_idea_4.png)
+
+随后在代码框中输入：
 
 ```java
 public class Hello {
-  public static void main(String[] args){
-    System.out.println("Hello, Java!");
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
   }
 }
 ```
 
-将其保存为`Hello.java`文件，打开终端（Windows 建议使用 [Powershell](https://docs.microsoft.com/en-us/powershell/)
-或[Git Bash](https://git-scm.com/download/win) ），定位到代码保存目录，输入`javac Hello.java`。
+:::tip
+事实上，我们创建的是一个 class，故 IDEA 会自动创建 `public class Hello { }`。
+:::
 
-如果代码准确无误，则无任何输出。你将在当前目录下看到`Hello.class`的文件。
+![ij_idea_5.png](./img/intro-the-first-program/ij_idea_5.png)
 
-```bash
-$ javac Hello.java
-$ ls
-Hello.class Hello.java
-```
+随后，点击 **class** 前或 **main** 方法前的 **播放器图标**，点击 `Run 'Hello.main()'`，
+在下方的控制台中即将显示 `Hello, World!` 字样。
 
-接下来，输入`java Hello`，你将看到以下输出：
+![ij_idea_6.png](./img/intro-the-first-program/ij_idea_6.png)
 
-```bash
-$ java Hello.java
-Hello, Java!
-```
+:::tip
+在后续的学习中，完全可以在该项目的基础上创建多个 **类** 来编写各种各样的代码。
+:::
 
 ## 分析第一个程序
 
-在任何一个 Java 程序中，你都能找到如下代码：
+在任何一个 Java 项目中，你都能找到形如 `public class Hello { ... }` 的代码。
+该代码定义了一个名为 `Hello` 的 **类**(`class`)，`public` 关键字代表了这是
+一个 **公开** 的类。
 
-```java
-public class Hello { ... }
-```
+:::tip
+在 Java 中，**类** 是最小的单位。
+:::
 
-该代码定义了一个名为`Hello`的类（class），`public`代表这是一个**公开**的类。
+在类中，我们定义了一个 `main` 方法。`public static void main(String[] args) { ... }`
+是一个 Java程序的入口，不能修改。
 
-在`Hello`的类中，我们还定义了一个名为`main`的方法：
+`System.out.println("Hello, World");` 是 Java 的语句，表示将 `Hello, World`
+字符串输出在控制台上。
 
-```java
-public static void main(String[] args){
-    System.out.println("Hello, Java!");
-}
-```
-
-`main`方法为一个 Java 程序的入口方法，其中的`String[] args`表示该方法接受一个`String[]`类型的参数，`public`、`static`为修饰符，关于修饰符相关的内容将在后面讲到。
-
-`System.out.println("Hello, Java!");`代表将`Hello, Java!`打印在控制台上。
-
-在 Java 中，每个 Java 语句的结束都需要以分号（`;`）结尾。
-
-## Java 运行机制
-
-Java 源代码本质上是一个纯文本文件，我们通过`javac`命令将源代码编译成[字节码](https://baike.baidu.com/item/%E5%AD%97%E8%8A%82%E7%A0%81/9953683)文件，再通过`java`命令执行该字节码文件。
-
-大概的运行机制如下图所示：
-
-![Java relationship](./img/intro-the-first-program/how-java-works.png)
+每一个 Java 语句都必须以 **分号**(`;`) 结尾。
