@@ -10,7 +10,7 @@
 通常称提供不同 JDK 实现的厂商称为 **Vender**。
 :::
 
-打开 Corretto JDK 的官网，选择所需要的 Java 版本（这里以 Java 18为例），进入下载页面。
+打开 Corretto JDK 的官网，选择所需要的 Java 版本（这里以 Java 18 为例），进入下载页面。
 
 ![corretto-jdk-1.png](./img/intro-java-dev-env/corretto-jdk-1.png)
 
