@@ -53,4 +53,5 @@ export const zh: SidebarConfig = {
       children: ["lang-how-advanced-lang-exec.md"],
     },
   ],
+  "/algorithm/": []
 };
