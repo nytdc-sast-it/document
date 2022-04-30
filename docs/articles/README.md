@@ -13,7 +13,7 @@
   - [如何修改系统 hosts](./a-how-to-modify-system-hosts.md)
   - [如何显示文件扩展名](./a-how-to-display-filename-extension.md)
   - [如何获得学信网验证码](./a-how-to-get-chsi-code.md)
-  - 基础内容
+  - 基础内容 ([来源 Mister.Hope 博客](https://mrhope.site/))
     - [计算机](./a-basic-computer.md)
     - [操作系统](./a-basic-os.md)
     - [文件名与文件扩展名](./a-basic-file-extension.md)
