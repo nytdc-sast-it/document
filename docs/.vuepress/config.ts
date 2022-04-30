@@ -1,8 +1,6 @@
-import { defineUserConfig } from "vuepress-vite";
 import type { DefaultThemeOptions } from "vuepress-vite";
+import { defineUserConfig } from "vuepress-vite";
 import { navbar, sidebar } from "./configs";
-
-import { path } from "@vuepress/utils";
 
 const isProd = process.env.NODE_ENV === "production";
 

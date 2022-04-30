@@ -2,7 +2,7 @@
   "name": "tdsast-document",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:tdsast-unofficial/document.git",
+  "repository": "git@github.com:nytdc-sast/document.git",
   "author": "Taoning Ge <gtn1024o@outlook.com>",
   "license": "MIT",
   "devDependencies": {
