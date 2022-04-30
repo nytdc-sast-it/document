@@ -19,9 +19,15 @@
 ![corretto-jdk-2.png](./img/intro-java-dev-env/corretto-jdk-2.png)
 
 :::tip
-注意，Windows 系统安装时会自动添加 `JAVA_HOME` 和 `PATH` 环境变量，如不想手动设置必须将其选中。
 
-![corretto-jdk-win-path.png](./img/intro-java-dev-env/corretto-jdk-win-path.png)
+1. 注意，Windows 系统安装时会自动添加 `JAVA_HOME` 和 `PATH` 环境变量，如不想手动设置必须将其选中。
+
+  ![corretto-jdk-win-path.png](./img/intro-java-dev-env/corretto-jdk-win-path.png)
+2. 事实上，IntelliJ IDEA 也自带有 JDK 下载功能
+
+  ![ij-idea-dl-jdk-1.png](./img/intro-java-dev-env/ij-idea-dl-jdk-1.png)
+
+  ![ij-idea-dl-jdk-2.png](./img/intro-java-dev-env/ij-idea-dl-jdk-2.png)
 :::
 
 ## JDK 环境变量配置
