@@ -1,4 +1,5 @@
 .vscode/
+!.vscode/extension.json
 node_modules
 .temp/
 .cache/
