@@ -12,6 +12,7 @@ env:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    if: github.repository == 'nytdc-sast/document'
     steps:
       - uses: actions/checkout@v3
         with:
