@@ -9,7 +9,7 @@ export default defineUserConfig<DefaultThemeOptions>({
 
   lang: "zh-CN",
   title: "南邮通达科协学习站",
-  description: "Just playing around",
+  description: "Just for Fun",
   head: [["link", { rel: "stylesheet", href: "/assets/css/style.css" }]],
 
   themeConfig: {
