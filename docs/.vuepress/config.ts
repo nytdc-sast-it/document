@@ -1,10 +1,13 @@
-import type { DefaultThemeOptions } from "vuepress-vite";
-import { defineUserConfig } from "vuepress-vite";
+import { defineUserConfig } from "vuepress";
 import { navbar, sidebar } from "./configs";
+
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { searchPlugin } from "@vuepress/plugin-search";
+import { defaultTheme } from "@vuepress/theme-default";
 
 const isProd = process.env.NODE_ENV === "production";
 
-export default defineUserConfig<DefaultThemeOptions>({
+export default defineUserConfig({
   // logo: "https://vuejs.org/images/logo.png",
 
   lang: "zh-CN",
@@ -12,7 +15,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   description: "Just for Fun",
   head: [["link", { rel: "stylesheet", href: "/assets/css/style.css" }]],
 
-  themeConfig: {
+  theme: defaultTheme({
     repo: "nytdc-sast/document",
     docsDir: "docs",
 
@@ -47,30 +50,17 @@ export default defineUserConfig<DefaultThemeOptions>({
       // only enable git plugin in production mode
       git: isProd,
     },
-  },
+  }),
   plugins: [
-    [
-      "@vuepress/plugin-google-analytics",
-      {
-        id: "G-QXHPDB4HM4",
-      },
-    ],
-    [
-      "@vuepress/plugin-search",
-      {
-        locales: {
-          "/": {
-            placeholder: "搜索",
-          },
+    googleAnalyticsPlugin({
+      id: "G-QXHPDB4HM4",
+    }),
+    searchPlugin({
+      locales: {
+        "/": {
+          placeholder: "搜索",
         },
       },
-    ],
-    [
-      "@vuepress/register-components",
-      {
-        components: {
-        },
-      },
-    ],
+    }),
   ],
 });
