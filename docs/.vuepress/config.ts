@@ -38,6 +38,7 @@ export default defineUserConfig({
       "这是一个 404 页面",
       "看起来我们进入了错误的链接",
       "你再打开信不信我用 Log4j 黑了你的电脑？",
+      "李胜龙：我要甜甜的恋爱",
     ],
     backToHome: "返回首页",
     // a11y
