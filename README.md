@@ -1,7 +1,5 @@
 # 南邮通达科协学习站
 
-[![Build and Deploy](https://github.com/tdsast-unofficial/document/actions/workflows/deploy.yml/badge.svg)](https://github.com/tdsast-unofficial/document/actions/workflows/deploy.yml)
-
 ## 南邮通达科协学习站是什么
 
 [南邮通达科协学习站](https://doc.tdsast.org)是由**南京邮电大学通达学院大学生科学与技术协会**建立的学习网站。在这里，你可以免费学习到编程技能。
