@@ -25,7 +25,7 @@ export default defineUserConfig({
     // ----------- i18n Start -----------
     // page meta
     editLinkText: "在 GitHub 上编辑此页",
-    lastUpdatedText: "上次更新",
+    lastUpdated: false,
     contributorsText: "贡献者",
     // custom containers
     tip: "提示",
