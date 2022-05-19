@@ -4,11 +4,11 @@ export const zh: SidebarConfig = {
   "/java/": [
     {
       text: "开始之前",
-      // collapsible: true,
+      collapsible: true,
       children: [
         {
           text: "Java 介绍及开发环境配置",
-          collapsible: true,
+          // collapsible: true,
           children: [
             "intro-introduction-of-java.md",
             "intro-java-runtime.md",
@@ -17,8 +17,26 @@ export const zh: SidebarConfig = {
             "intro-the-first-program.md",
           ],
         },
+        {
+          text: "基础知识",
+          // collapsible: true,
+          children: [
+            "basic-name.md",
+            "basic-comment.md",
+            "basic-data-type.md",
+            "basic-operator.md",
+            "basic-control-flow.md",
+            "basic-array.md",
+            "basic-command-param.md",
+          ],
+        },
       ],
     },
+    // {
+    //   text: "面向对象",
+    //   collapsible: true,
+    //   children: [],
+    // },
   ],
   "/articles/": [
     {

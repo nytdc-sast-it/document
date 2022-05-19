@@ -1,6 +1,6 @@
 # 第一个 Java 程序
 
-## 使用 jshell 编写第一个程序
+## 使用 jshell 运行第一个程序
 
 从 Java 9 开始，JDK 内置了一个强大的 REPL(Read-Eval-Print Loop) 交互式工具，该工具是个交互式的命令行界面，
 可以用来执行 Java 的变量声明、语句和表达式，并且可以立即看到结果。
@@ -16,6 +16,12 @@ Windows 上的 `cmd`、`Powershell`、`git-bash`）中输入 `jshell` 运行。
 使用 jshell 编写的第一个 Java 程序。
 
 ![jshell.png](./img/intro-the-first-program/jshell.png)
+
+## 通过命令行编写 / 编译第一个程序
+
+:::tip
+待更新
+:::
 
 ## 使用 IntelliJ IDEA 开发第一个程序
 
