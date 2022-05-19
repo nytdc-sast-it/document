@@ -3,12 +3,11 @@ import type { SidebarConfig } from "@vuepress/theme-default";
 export const zh: SidebarConfig = {
   "/java/": [
     {
-      text: "开始之前",
+      text: "Java 基础",
       collapsible: true,
       children: [
         {
-          text: "Java 介绍及开发环境配置",
-          // collapsible: true,
+          text: "环境搭建",
           children: [
             "intro-introduction-of-java.md",
             "intro-java-runtime.md",
@@ -18,8 +17,7 @@ export const zh: SidebarConfig = {
           ],
         },
         {
-          text: "基础知识",
-          // collapsible: true,
+          text: "语言基础",
           children: [
             "basic-name.md",
             "basic-comment.md",
@@ -30,10 +28,42 @@ export const zh: SidebarConfig = {
             "basic-command-param.md",
           ],
         },
+        // {
+        //   text: "面向对象",
+        //   children: [],
+        // },
+        // {
+        //   text: "异常处理",
+        //   children: [],
+        // },
+        // {
+        //   text: "集合框架及泛型",
+        //   children: [],
+        // },
+        // {
+        //   text: "常用类",
+        //   children: [],
+        // },
+        // {
+        //   text: "Stream 流",
+        //   children: [],
+        // },
+        // {
+        //   text: "注解与反射",
+        //   children: [],
+        // },
+        // {
+        //   text: "IO 流",
+        //   children: [],
+        // },
+        // {
+        //   text: "并发",
+        //   children: [],
+        // },
       ],
     },
     // {
-    //   text: "面向对象",
+    //   text: "构建工具",
     //   collapsible: true,
     //   children: [],
     // },
@@ -51,7 +81,6 @@ export const zh: SidebarConfig = {
         "a-how-to-get-chsi-code",
         {
           text: "基础内容",
-          collapsible: true,
           children: [
             "a-basic-computer.md",
             "a-basic-os.md",
