@@ -29,16 +29,54 @@ export const javaSidebar: SidebarConfigArray = [
           "basic-command-param.md",
         ],
       },
+      {
+        text: "面向对象",
+        children: [
+          "oop-introduce.md",
+          {
+            text: "类和对象",
+            children: [
+              "oop-fields-methods.md",
+              "oop-static.md",
+              "oop-constructor.md",
+              "oop-records.md",
+              "oop-package.md",
+            ],
+          },
+          {
+            text: "继承",
+            children: [
+              "oop-sub-super-classes.md",
+              "oop-abstract-classes.md",
+              "oop-enum-classes.md",
+              "oop-sealed-classes.md",
+            ],
+          },
+          {
+            text: "更多",
+            children: [
+              "oop-interface.md",
+              "oop-lambda-expressions.md",
+              "oop-inner-classes.md",
+            ],
+          },
+        ],
+      },
+      {
+        text: "异常处理",
+        children: [
+          "exception-introduction.md",
+          "exception-catch.md",
+          "exception-throw.md",
+          "exception-log.md",
+        ],
+      },
       // {
-      //   text: "面向对象",
+      //   text: "泛型",
       //   children: [],
       // },
       // {
-      //   text: "异常处理",
-      //   children: [],
-      // },
-      // {
-      //   text: "集合框架及泛型",
+      //   text: "集合",
       //   children: [],
       // },
       // {
