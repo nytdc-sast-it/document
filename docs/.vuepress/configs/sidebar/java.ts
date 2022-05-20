@@ -23,6 +23,8 @@ export const javaSidebar: SidebarConfigArray = [
           "basic-data-type.md",
           "basic-operator.md",
           "basic-control-flow.md",
+          "basic-strings.md",
+          "basic-big-number.md",
           "basic-array.md",
           "basic-command-param.md",
         ],
