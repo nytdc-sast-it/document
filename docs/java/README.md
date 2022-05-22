@@ -11,6 +11,10 @@
 - [《On Java》中文版](https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BANEJK1olXDYCVl5eC0sTB19MRANLAjZbERscSkAJHTdNTwcKBlMdBgABFksVA2wLG18RQl9HCANtcTRfUA1DXB91VE54Lj8gbC1EQBdXTVcZbQcyVF9cC04VBWsBHGslXQEyAjBdCUoWAm4NH1wSbQcyVFlZC0MUB2oAE14UVDYFVFdtUx55dQRLWCBQCXlcMgM9OHsnAF8PG1IBW3RDBkpbensnA18LKxl7CFVSVwxcWEkWBTwIHlgdDg9RXVpeXxgRV24KHV5CDwcyVl9cDEInMw)
 - [廖雪峰官方网站](https://www.liaoxuefeng.com/)
 
+推荐的学习网站：
+
+- [字节传说](https://bytelegend.com)
+
 ## 学习路线
 
 :::tip
