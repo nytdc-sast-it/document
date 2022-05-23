@@ -1,6 +1,7 @@
 import { SidebarConfigArray } from "@vuepress/theme-default";
 
 export const javaSidebar: SidebarConfigArray = [
+  "README.md",
   {
     text: "Java 基础",
     collapsible: true,
@@ -13,6 +14,8 @@ export const javaSidebar: SidebarConfigArray = [
           "intro-java-dev-env.md",
           "intro-jdk-jre.md",
           "intro-the-first-program.md",
+          "intro-guess-number.md",
+          "ext-graalvm-native.md",
         ],
       },
       {
@@ -29,39 +32,7 @@ export const javaSidebar: SidebarConfigArray = [
           "basic-command-param.md",
         ],
       },
-      {
-        text: "面向对象",
-        children: [
-          "oop-introduce.md",
-          // {
-          //   text: "类和对象",
-          //   children: [
-          //     "oop-fields-methods.md",
-          //     "oop-static.md",
-          //     "oop-constructor.md",
-          //     "oop-records.md",
-          //     "oop-package.md",
-          //   ],
-          // },
-          // {
-          //   text: "继承",
-          //   children: [
-          //     "oop-sub-super-classes.md",
-          //     "oop-abstract-classes.md",
-          //     "oop-enum-classes.md",
-          //     "oop-sealed-classes.md",
-          //   ],
-          // },
-          // {
-          //   text: "更多",
-          //   children: [
-          //     "oop-interface.md",
-          //     "oop-lambda-expressions.md",
-          //     "oop-inner-classes.md",
-          //   ],
-          // },
-        ],
-      },
+      "oop-introduce.md",
       {
         text: "异常处理",
         children: [
