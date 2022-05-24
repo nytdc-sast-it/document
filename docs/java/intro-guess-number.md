@@ -28,7 +28,8 @@ Java 工程。具体可以参考下图：
 
 ![class.png](./img/intro-guess-number/class.png)
 
-与上一节一样，IDEA 自动为我们编写了 `GuessNumber` 类的定义。同时，第一行也多出了 `package` 语句。
+与上一节一样，IDEA 自动为我们编写了 `GuessNumber` 类的定义。在 Java 中，最基本的组成单位是
+**类**。同时，第一行也多出了 `package` 语句。
 
 ```java
 // src/main/java/org/tdsast/GuessNumber.java
@@ -86,7 +87,65 @@ public class GuessNumber {
 
 ### 输出提示
 
+首先，我们可以很清楚地看到两行 `print` 语句：
+
+```java
+System.out.println("===== 猜数字游戏 =====");
+System.out.print("请输入你猜的数字：");
+```
+
+这两行代码虽然都是输出内容，但输出的结果是不同的。细心的朋友应该已经发现了，第一行代码使用的是 `println`
+方法，而第二行使用的是 `print` 方法。`println` 中的 `ln` 代表的是 `line`，即 **打印行**，故该行代码
+在执行时会在文本的最后输出一个换行。`print` 方法则不会。
+
 ### 使用变量来存储用户输入
+
+获取用户输入主要有 3 行相关代码（此部分代码进行了部分精简，仅表示层级关系）：
+
+```java
+import java.util.Scanner;
+
+{
+  Scanner scanner = new Scanner(System.in);
+
+  int inputNum = scanner.nextInt();
+
+  scanner.close();
+}
+```
+
+新接触 Java 的朋友可能会有点困惑，我们一行一行进行解释。为了使用 Java 标准库中的 `Scanner` 类，我们必须首先
+将该类 **导入** 进来。Java 会默认导入 `java.lang` 包，故如使用到该包中的类时无需导入（注意，默认导入的是
+`java.lang` 包，其下的包如 `java.lang.reflect` 仍需手动导入）。
+
+```java
+import java.util.Scanner;
+```
+
+为了使用 Scanner，我们必须首先对其进行 **初始化**（此处说法并不准确），在使用完之后，我们需要将其关闭以防止其一直使用
+该资源。
+
+```java
+Scanner scanner = new Scanner(System.in);
+scanner.close();
+```
+
+随后，我们使用了一个名为 `inputNum` 的 `int` 变量来存储用户输入值。变量的定义通常使用 `类型名 变量名 [= 初始值];`
+的格式进行定义。后面使用了 `Scanner` 类中的实例方法 `nextInt` 来获取用户输入的整数。以下代码的含义是：定义一个
+`int`（整型）的变量，名为 `inputNum`，并且将其赋值为 **用户的输入值**。
+
+:::tip
+在 Java 9 之后，我们可以通过 `var` 关键字来定义变量。该关键字可以根据 **初始值** 自动推断出变量的类型。
+:::
+
+```java
+int inputNum = scanner.nextInt();
+
+// Java 9 之后可以使用如下方法定义变量（自动推断出 `input` 变量为 `int` 类型
+var inputNum = scanner.nextInt();
+```
+
+### 打印输入内容
 
 ## 生成一个随机数字
 
