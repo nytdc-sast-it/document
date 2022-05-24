@@ -7,7 +7,9 @@
 本节主要涉及的 Java 内容
 :::
 
-## 新建一个 Java 项目
+## 准备一个新的项目
+
+### 使用 IntelliJ IDEA 创建 Java 项目
 
 首先按照 [上一节](./intro-introduction-of-java.md) 中的方法，使用 IntelliJ IDEA 创建一个
 Java 工程。具体可以参考下图：
@@ -33,6 +35,10 @@ public class GuessNumber {
 }
 ```
 
+<!-- TODO: 介绍 package 是什么 -->
+
+### 确保项目正确运行
+
 我们想要使得该类成为一个可以运行的类，必须在类中添加 `main` 方法。在 IDEA 中，我们可以在类里输入
 `psvm` 来快速创建 `main` 方法（`public static void main(String[] args){ }`）
 
@@ -42,9 +48,9 @@ public class GuessNumber {
 package org.tdsast;
 
 public class GuessNumber {
-    public static void main(String[] args) {
-        System.out.println("Hello, world!");
-    }
+  public static void main(String[] args) {
+    System.out.println("Hello, world!");
+  }
 }
 ```
 
