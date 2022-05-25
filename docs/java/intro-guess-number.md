@@ -39,7 +39,9 @@ public class GuessNumber {
 }
 ```
 
-<!-- TODO: 介绍 package 是什么 -->
+:::tip
+TODO: package 是什么
+:::
 
 ### 确保项目正确运行
 
@@ -53,9 +55,9 @@ public class GuessNumber {
 package org.tdsast;
 
 public class GuessNumber {
-  public static void main(String[] args) {
-    System.out.println("Hello, world!");
-  }
+    public static void main(String[] args) {
+        System.out.println("Hello, world!");
+    }
 }
 ```
 
@@ -70,16 +72,16 @@ package org.tdsast;
 import java.util.Scanner;
 
 public class GuessNumber {
-  public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-    System.out.println("===== 猜数字游戏 =====");
-    System.out.print("请输入你猜的数字：");
-    int inputNum = scanner.nextInt();
-    System.out.println("你刚才输入的数字是 " + inputNum);
+        System.out.println("===== 猜数字游戏 =====");
+        System.out.print("请输入你猜的数字：");
+        int inputNum = scanner.nextInt();
+        System.out.println("你刚才输入的数字是 " + inputNum);
 
-    scanner.close();
-  }
+        scanner.close();
+    }
 }
 ```
 
@@ -106,11 +108,11 @@ System.out.print("请输入你猜的数字：");
 import java.util.Scanner;
 
 {
-  Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 
-  int inputNum = scanner.nextInt();
+    int inputNum = scanner.nextInt();
 
-  scanner.close();
+    scanner.close();
 }
 ```
 
@@ -147,13 +149,151 @@ var inputNum = scanner.nextInt();
 
 ### 打印输入内容
 
+我们可以首先用将用户输入的内容打印出来，在此代码中，我们使用 `+` 将字符串和整数进行连接。
+
+```java
+System.out.println("你刚才输入的数字是 " + inputNum);
+```
+
+### 测试第一部分的代码
+
+到目前为止，实现出来的效果如下：
+
+```text
+===== 猜数字游戏 =====
+请输入你猜的数字：666       <-- 这里的666是自己输入的
+你刚才输入的数字是 666
+```
+
 ## 生成一个随机数字
 
-<!-- Random 类 -->
+```java
+package org.tdsast;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class GuessNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        Random random = new Random();
+        int number = random.nextInt(100);
+        System.out.println("生成的数字是：" + number);
+
+        System.out.println("===== 猜数字游戏 =====");
+        System.out.print("请输入你猜的数字：");
+        int inputNum = scanner.nextInt();
+        System.out.println("你刚才输入的数字是 " + inputNum);
+
+        scanner.close();
+    }
+}
+
+```
+
+在 Java 中，我们可以通过 `Random` 类来生成随机数。与 `Scanner` 类一样，`Random` 类位于 `java.util`
+包下，所以需要将该类导入。
+
+```java
+import java.util.Random;
+```
+
+首先，我们需要 **实例化** 一个 `Random` 对象，将该对象赋值给 `random` 变量。然后调用 `nextInt` 实例方法。
+该方法有两个 **重载方法** —— `nextInt()` 和 `nextInt(int bound)`。前者会生成一个随机的整数，后者则会生成
+`0 ~ bound` 之间的整数。在这个程序中，我们生成 `0 ~ 100` 之间的整数即可。最后，我们将生成的数字打印出来，
+便于我们测试（在最终将会删除）。
+
+```java
+Random random = new Random();
+int number = random.nextInt(100);
+System.out.println("生成的数字是：" + number);
+```
 
 ## 比较猜测和随机数
 
-<!-- 运算符 -->
+### if 分支
+
+我们可以使用分支结构来比较猜测和随机数，下图展示了程序的流程图：
+
+![if-else.png](./img/intro-guess-number/if-else.png)
+
+Java 的分支结构格式如下：
+
+```java
+// if 结构
+if (condition) {
+    // 当 condition 成立时执行这一段代码
+}
+
+// if-else 结构
+if (condition) {
+    // 当 condition 成立时执行这一段代码
+} else {
+    // 当 condition 不成立时执行这一段代码
+}
+
+// if-else-if-else 结构
+if (condition1) {
+    // 当 condition1 成立时执行这一段代码
+} else if (condition2) {
+    // 当 condition1 不成立，condition2 成立时执行这一段代码
+} else {
+    // 当 condition1 和 condition2 都不成立时执行这一段代码
+}
+```
+
+了解了 Java 的分支结构，编写这部分代码就很容易了：
+
+```java
+public class GuessNumber {
+    public static void main(String[] args) {
+        // ...
+        System.out.println("你刚才输入的数字是 " + inputNum);
+
+        if (inputNum > number) {
+            System.out.println("大了");
+        } else if (inputNum < number) {
+            System.out.println("小了");
+        } else {
+            System.out.println("猜对了");
+        }
+
+        scanner.close();
+    }
+}
+```
+
+### 测试第二部分的代码
+
+运行程序，可以得到如下结果：
+
+```text
+第一次运行：
+生成的数字是：43
+===== 猜数字游戏 =====
+请输入你猜的数字：66
+你刚才输入的数字是 66
+大了
+
+--------------------------
+
+第二次运行：
+生成的数字是：75
+===== 猜数字游戏 =====
+请输入你猜的数字：66
+你刚才输入的数字是 66
+小了
+
+--------------------------
+
+第三次运行：
+生成的数字是：23
+===== 猜数字游戏 =====
+请输入你猜的数字：23
+你刚才输入的数字是 23
+猜对了
+```
 
 ## 使用循环进行多次猜测
 
@@ -162,3 +302,5 @@ var inputNum = scanner.nextInt();
 ## 处理错误的输入
 
 <!-- Java 异常 -->
+
+## 删除无用信息
