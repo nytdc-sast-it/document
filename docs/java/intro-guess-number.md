@@ -297,10 +297,204 @@ public class GuessNumber {
 
 ## 使用循环进行多次猜测
 
-<!-- while 循环 -->
+目前我们可以发现，每当我们猜测了一个数字以后，无论对错，都会将程序退出。这是不可接受的，我们希望猜错时，
+能够让用户继续输入；猜对时，则退出程序。我们可以使用 `while` 循环，结合 `break` 语句实现这一目的。
+
+```java
+public class GuessNumber {
+    public static void main(String[] args) {
+        // ...
+        System.out.println("===== 猜数字游戏 =====");
+        while (true) {
+            System.out.print("请输入你猜的数字：");
+            int inputNum = scanner.nextInt();
+            System.out.println("你刚才输入的数字是 " + inputNum);
+
+            if (inputNum > number) {
+                System.out.println("大了");
+            } else if (inputNum < number) {
+                System.out.println("小了");
+            } else {
+                System.out.println("猜对了");
+                break;
+            }
+        }
+
+        scanner.close();
+    }
+}
+```
+
+`while` 循环的格式如下。当 `condition` 成立时，则会执行代码块里的语句。
+
+```java
+while (condition) {
+    // ...
+}
+```
+
+我们使用 `while (true) { ... }` 来进行循环。注意，我们这里的 `condition` 输入的是 `true`，
+故如循环体内无任何控制语句时他就会一直执行循环体内的语句（俗称 **死循环**、**无限循环**）。在猜对时
+执行 `break` 语句，该语句主要用于停止当前循环。
+
+截至目前执行效果：
+
+```text
+生成的数字是：13
+===== 猜数字游戏 =====
+请输入你猜的数字：6
+你刚才输入的数字是 6
+小了
+请输入你猜的数字：18
+你刚才输入的数字是 18
+大了
+请输入你猜的数字：13
+你刚才输入的数字是 13
+猜对了
+```
 
 ## 处理错误的输入
 
-<!-- Java 异常 -->
+不知大家在执行该程序时，是否尝试过输入非数字？当我们输入非数字时，该程序报错了。随后，该程序退出。
+
+```text
+生成的数字是：39
+===== 猜数字游戏 =====
+请输入你猜的数字：abc
+Exception in thread "main" java.util.InputMismatchException
+    at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+    at java.base/java.util.Scanner.next(Scanner.java:1594)
+    at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+    at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+    at org.tdsast.GuessNumber.main(GuessNumber.java:17)
+```
+
+本部分则是简要的介绍 Java 的异常处理。
+
+Java 的异常处理格式如下：
+
+```java
+try {
+    // 可能产生异常的代码
+} catch (异常类 异常变量名) {
+    // 对异常进行处理
+}
+```
+
+在如下代码中，我们将 `inputNum` 变量提取出来，并赋值为 **整型的最小值**，以便在后续的代码中
+可以对 `inputNum` 变量进行访问（变量的作用域），并跳出 `do-while` 循环。`do-while` 循环
+会首先执行一次 `do` 代码块中的内容，然后判断 `while` 中的 `condition` 是否成立。如果成立
+则会继续执行语句块。
+
+`try` 代码块中有一句可能会产生 `InputMismatchException` 异常的代码（即 `scanner.nextInt()`），
+我们在 `catch` 中对其进行捕获，并且输出 `请输入数字！` 的字样。需要注意的是，下面必须对于错误的输入
+进行清除操作（[来源](https://stackoverflow.com/questions/24857070/try-catch-inside-while-loop)），
+否则程序将无限输出 `请输入数字！`。
+
+```java
+public class GuessNumber {
+    public static void main(String[] args) {
+        // ...
+
+        System.out.println("===== 猜数字游戏 =====");
+        while (true) {
+            int inputNum = Integer.MIN_VALUE;   // 将 inputNum 初始化为整型最小值
+            do {
+                System.out.print("请输入你猜的数字：");
+                try {
+                    inputNum = scanner.nextInt();
+                } catch (InputMismatchException e) {
+                    System.out.println("请输入数字！");
+                    scanner.next();     // 清除错误的输入
+                }
+            } while (inputNum == Integer.MIN_VALUE);
+            System.out.println("你刚才输入的数字是 " + inputNum);
+
+            // ...
+        }
+    }
+}
+```
+
+该部分执行的效果如下：
+
+```text
+生成的数字是：65
+===== 猜数字游戏 =====
+请输入你猜的数字：tdsast
+请输入数字！
+请输入你猜的数字：26
+你刚才输入的数字是 26
+小了
+请输入你猜的数字：69
+你刚才输入的数字是 69
+大了
+请输入你猜的数字：65
+你刚才输入的数字是 65
+猜对了
+```
 
 ## 删除无用信息
+
+终于啊终于，我们的程序总算是完成了。不过，我们需要将之前调试用的输出（比如生成的数字、
+获取的用户输入）删掉。
+
+最终的代码如下：
+
+```java
+package org.tdsast;
+
+import java.util.InputMismatchException;
+import java.util.Random;
+import java.util.Scanner;
+
+public class GuessNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        Random random = new Random();
+        int number = random.nextInt(100);
+
+        System.out.println("===== 猜数字游戏 =====");
+        while (true) {
+            int inputNum = Integer.MIN_VALUE;
+            do {
+                System.out.print("请输入你猜的数字：");
+                try {
+                    inputNum = scanner.nextInt();
+                } catch (InputMismatchException e) {
+                    System.out.println("请输入数字！");
+                    scanner.next();     // 清除错误的输入
+                }
+            } while (inputNum == Integer.MIN_VALUE);
+
+            if (inputNum > number) {
+                System.out.println("大了");
+            } else if (inputNum < number) {
+                System.out.println("小了");
+            } else {
+                System.out.println("猜对了");
+                break;
+            }
+        }
+
+        scanner.close();
+    }
+}
+```
+
+程序运行结果如下：
+
+```text
+===== 猜数字游戏 =====
+请输入你猜的数字：6
+小了
+请输入你猜的数字：50
+大了
+请输入你猜的数字：25
+小了
+请输入你猜的数字：37
+大了
+请输入你猜的数字：30
+猜对了
+```
