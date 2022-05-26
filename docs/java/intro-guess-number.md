@@ -37,7 +37,7 @@ Java 工程。具体可以参考下图：
 ![class.png](./img/intro-guess-number/class.png)
 
 与上一节一样，IDEA 自动为我们编写了 `GuessNumber` 类的定义。在 Java 中，最基本的组成单位是
-**类**。同时，第一行也多出了 `package` 语句。
+**类**。同时，第一行也多出了 `package` 语句。因为 **包** 的概念较为复杂，在本节中不再介绍。
 
 ```java
 // src/main/java/org/tdsast/GuessNumber.java
@@ -46,10 +46,6 @@ package org.tdsast;
 public class GuessNumber {
 }
 ```
-
-:::tip
-TODO: package 是什么
-:::
 
 ### 确保项目正确运行
 
