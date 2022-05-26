@@ -6,7 +6,15 @@
 本节完整的源代码：<https://github.com/nytdc-sast/guess_number>
 
 :::tip
-本节主要涉及的 Java 内容
+本节主要涉及以下内容：
+
+- IDEA 新建 Java 项目
+- 使用 `Scanner` 获取用户输入
+- 使用变量存储数据
+- 使用 `Random` 生成随机数
+- 使用 `if` 分支结构
+- 使用 `while` 、 `do-while` 循环结构
+- 异常处理
 :::
 
 ## 准备一个新的项目
