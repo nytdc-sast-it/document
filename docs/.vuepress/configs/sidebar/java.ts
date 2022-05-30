@@ -1,6 +1,7 @@
 import { SidebarConfigArray } from "@vuepress/theme-default";
 
 export const javaSidebar: SidebarConfigArray = [
+  "README.md",
   {
     text: "Java 基础",
     collapsible: true,
@@ -13,6 +14,8 @@ export const javaSidebar: SidebarConfigArray = [
           "intro-java-dev-env.md",
           "intro-jdk-jre.md",
           "intro-the-first-program.md",
+          "intro-guess-number.md",
+          "ext-graalvm-native.md",
         ],
       },
       {
@@ -23,20 +26,28 @@ export const javaSidebar: SidebarConfigArray = [
           "basic-data-type.md",
           "basic-operator.md",
           "basic-control-flow.md",
+          "basic-strings.md",
+          "basic-big-number.md",
           "basic-array.md",
           "basic-command-param.md",
         ],
       },
+      "oop-introduce.md",
+      {
+        text: "异常处理",
+        children: [
+          "exception-introduction.md",
+          "exception-catch.md",
+          "exception-throw.md",
+          "exception-log.md",
+        ],
+      },
       // {
-      //   text: "面向对象",
+      //   text: "泛型",
       //   children: [],
       // },
       // {
-      //   text: "异常处理",
-      //   children: [],
-      // },
-      // {
-      //   text: "集合框架及泛型",
+      //   text: "集合",
       //   children: [],
       // },
       // {

@@ -17,10 +17,42 @@ Windows 上的 `cmd`、`Powershell`、`git-bash`）中输入 `jshell` 运行。
 
 ![jshell.png](./img/intro-the-first-program/jshell.png)
 
-## 通过命令行编写 / 编译第一个程序
+## 通过命令行编译第一个程序
+
+我们在使用 IDE 学习 Java 之前，我们必须首先手动地体验一下如何使用 Java 提供的工具来手动编译程序。
+
+既然要编译程序，那么必然需要有程序代码供我们编译。我们首先在任意目录（这里以 `~/tmp/java/` 为例子）
+创建名为 `Hello.java` 的文件。在该文件中输入如下代码：
+
+```java
+public class Hello {
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
+  }
+}
+```
 
 :::tip
-待更新
+必须使用纯文本编辑器（如 [VSCode](https://code.visualstudio.com)、[Sublime Text](https://www.sublimetext.com/)）
+来编写程序，**绝对** 不可以使用任何带有格式的编辑器（如 Word、写字板）等软件编写。
+
+同时，不推荐使用 Windows 自带的 记事本 来编写程序。
+:::
+
+![command_1.png](./img/intro-the-first-program/command_1.png)
+
+在当前目录下打开任意终端（如 Windows 的 `cmd`、`Powershell`、`git-bash`，macOS / Linux 的
+`Terminal`），在命令行窗口中输入 `javac -d . Hello.java`。此命令将会将 Java 源代码编译成
+Java 字节码文件。
+
+![command_2.png](./img/intro-the-first-program/command_2.png)
+
+执行 `java Hello` 命令，运行该 Java 程序（事实上运行的是 `Hello` 这个类）
+
+![command_3.png](./img/intro-the-first-program/command_3.png)
+
+:::tip
+注意，执行 `java` 命令时后面接的是类名，不需要添加 `.class`。
 :::
 
 ## 使用 IntelliJ IDEA 开发第一个程序
