@@ -1,3 +1,6 @@
+---
+author: 葛涛宁
+---
 # 一个猜数字的小游戏
 
 在 [上一节](./intro-the-first-program.md) 中，我们编写了第一个 Java 程序。这节将会以一个
