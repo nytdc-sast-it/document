@@ -10,4 +10,12 @@ export default hopeTheme({
 
   navbar: navbar,
   sidebar: sidebar,
+
+  plugins: {
+    mdEnhance: {
+      sup: true,
+      sub: true,
+      tex: true,
+    },
+  },
 });
