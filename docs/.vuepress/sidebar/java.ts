@@ -1,10 +1,9 @@
-import { SidebarConfigArray } from "@vuepress/theme-default";
+import { HopeThemeSidebarArrayConfig } from "vuepress-theme-hope";
 
-export const javaSidebar: SidebarConfigArray = [
-  "README.md",
+export const javaSidebar: HopeThemeSidebarArrayConfig = [
   {
     text: "Java 基础",
-    collapsible: true,
+    collapsable: true,
     children: [
       {
         text: "环境搭建",
@@ -18,30 +17,30 @@ export const javaSidebar: SidebarConfigArray = [
           "ext-graalvm-native.md",
         ],
       },
-      {
-        text: "语言基础",
-        children: [
-          "basic-name.md",
-          "basic-comment.md",
-          "basic-data-type.md",
-          "basic-operator.md",
-          "basic-control-flow.md",
-          "basic-strings.md",
-          "basic-big-number.md",
-          "basic-array.md",
-          "basic-command-param.md",
-        ],
-      },
-      "oop-introduce.md",
-      {
-        text: "异常处理",
-        children: [
-          "exception-introduction.md",
-          "exception-catch.md",
-          "exception-throw.md",
-          "exception-log.md",
-        ],
-      },
+      // {
+      //   text: "语言基础",
+      //   children: [
+      //     "basic-name.md",
+      //     "basic-comment.md",
+      //     "basic-data-type.md",
+      //     "basic-operator.md",
+      //     "basic-control-flow.md",
+      //     "basic-strings.md",
+      //     "basic-big-number.md",
+      //     "basic-array.md",
+      //     "basic-command-param.md",
+      //   ],
+      // },
+      // "oop-introduce.md",
+      // {
+      //   text: "异常处理",
+      //   children: [
+      //     "exception-introduction.md",
+      //     "exception-catch.md",
+      //     "exception-throw.md",
+      //     "exception-log.md",
+      //   ],
+      // },
       // {
       //   text: "泛型",
       //   children: [],

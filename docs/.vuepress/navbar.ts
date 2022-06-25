@@ -4,5 +4,5 @@ export default navbar([
   { text: "首页", link: "/" },
   { text: "文章", link: "/articles/" },
   { text: "Java", link: "/java/" },
-  { text: "算法", link: "/algorithm/" },
+  // { text: "算法", link: "/algorithm/" },
 ]);

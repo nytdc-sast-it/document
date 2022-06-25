@@ -1,6 +1,6 @@
-import { SidebarConfigArray } from "@vuepress/theme-default";
+import { HopeThemeSidebarArrayConfig } from "vuepress-theme-hope";
 
-export const articleSidebar: SidebarConfigArray = [
+export const articleSidebar: HopeThemeSidebarArrayConfig = [
   {
     text: "必看文章",
     children: [
@@ -13,6 +13,7 @@ export const articleSidebar: SidebarConfigArray = [
       "a-how-to-get-chsi-code",
       {
         text: "基础内容",
+        collapsable: true,
         children: [
           "a-basic-computer.md",
           "a-basic-os.md",
