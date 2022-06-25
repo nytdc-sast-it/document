@@ -2,6 +2,8 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
+import { path } from "@vuepress/utils";
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -24,6 +26,9 @@ export default defineUserConfig({
           placeholder: "搜索",
         },
       },
+    }),
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, "./components"),
     }),
   ],
 });
