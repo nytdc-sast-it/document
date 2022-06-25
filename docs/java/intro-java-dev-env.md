@@ -55,8 +55,8 @@ macOS 可通过 `/usr/libexec/java_home -v 18` 命令来获取 `JAVA_HOME` 路�
 
 ## 安装 IntelliJ IDEA
 
-IntelliJ IDEA 可从 <https://www.jetbrains.com/idea/> 获取下载。方便起见，我们常常使用 JetBrains
-提供的 [Toolbox](https://www.jetbrains.com/toolbox-app/) 来管理 JetBrains 家族各个 IDE 的版本。
+IntelliJ IDEA 可从 <https://www.jetbrains.com.cn/idea/> 获取下载。方便起见，我们常常使用 JetBrains
+提供的 [Toolbox](https://www.jetbrains.com.cn/toolbox-app/) 来管理 JetBrains 家族各个 IDE 的版本。
 
 安装 Toolbox 后，安装需要的 IDE 即可。
 
@@ -65,6 +65,6 @@ IntelliJ IDEA 可从 <https://www.jetbrains.com/idea/> 获取下载。方便起�
 :::tip
 JetBrains 公司面向大学生提供了学生优惠，可免费使用 JetBrains 旗下所有 IDE 工具。
 
-[JetBrains 免费计划](https://www.jetbrains.com/zh-cn/community/education/#students)
+[JetBrains 免费计划](https://www.jetbrains.com.cn/community/education/#students)
 [学信网验证码获取](../articles/a-how-to-get-chsi-code.md)
 :::
