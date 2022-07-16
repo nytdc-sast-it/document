@@ -6,12 +6,8 @@ actions:
   - text: Java
     link: /java/
     type: primary
-footer: Copyright © 2021 TDSAST.ORG
+footer: Copyright © 2022 SASTIT.COM
 ---
-## 南邮通达科协学习站是什么
-
-[南邮通达科协学习站](https://doc.tdsast.org) 是由 **南京邮电大学通达学院大学生科学与技术协会** 建立的学习网站。在这里，你可以免费学习到编程技能。
-
 ## 贡献指南
 
 正如你所看到，本站所有内容都是开源的。任何人都可以向本仓库贡献教程、文章。

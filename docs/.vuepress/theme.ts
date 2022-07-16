@@ -3,9 +3,9 @@ import navbar from "./navbar";
 import sidebar from "./sidebar";
 
 export default hopeTheme({
-  hostname: "https://doc.tdsast.org",
+  hostname: "https://doc.sastit.com",
 
-  repo: "nytdc-sast/document",
+  repo: "nytdc-sast-it/document",
   docsDir: "docs",
 
   navbar: navbar,
