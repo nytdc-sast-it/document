@@ -26,13 +26,11 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install
-      - name: Install tcb cli
-        run: pnpm install -g @cloudbase/cli@latest
       - name: Build
         run: pnpm run docs:build
-      - name: Login to tcb
-        run: tcb login --apiKeyId ${{secrets.secretId}} --apiKey ${{secrets.secretKey}}
       - name: Deploy to Tencent CloudBase
-        run: tcb framework deploy
-        env:
-          ENV_ID: ${{secrets.envId}}
+        uses: TencentCloudBase/cloudbase-action@v2.0.1
+        with:
+          secretId: ${{secrets.secretId}}
+          secretKey: ${{secrets.secretKey}}
+          envId: ${{secrets.envId}}
