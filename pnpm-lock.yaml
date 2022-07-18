@@ -2,7 +2,6 @@ lockfileVersion: 5.4
 
 specifiers:
   '@vuepress/client': 2.0.0-beta.48
-  '@vuepress/plugin-google-analytics': 2.0.0-beta.48
   '@vuepress/plugin-register-components': 2.0.0-beta.48
   '@vuepress/plugin-search': 2.0.0-beta.48
   vue: 3.2.37
@@ -11,7 +10,6 @@ specifiers:
 
 devDependencies:
   '@vuepress/client': 2.0.0-beta.48
-  '@vuepress/plugin-google-analytics': 2.0.0-beta.48
   '@vuepress/plugin-register-components': 2.0.0-beta.48
   '@vuepress/plugin-search': 2.0.0-beta.48
   vue: 3.2.37
@@ -1604,16 +1602,6 @@ packages:
       '@vuepress/core': 2.0.0-beta.48
       '@vuepress/utils': 2.0.0-beta.48
       execa: 5.1.1
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
-  /@vuepress/plugin-google-analytics/2.0.0-beta.48:
-    resolution: {integrity: sha512-MuEOdu7xX+0cisozoO6quaqNcqtiwleFXZs55Vj7386DFpnsTsdZ//OkSeWwvhwnFNWC5r255OHq3N9CIpjxAA==}
-    dependencies:
-      '@vuepress/client': 2.0.0-beta.48
-      '@vuepress/core': 2.0.0-beta.48
-      '@vuepress/utils': 2.0.0-beta.48
     transitivePeerDependencies:
       - supports-color
     dev: true
