@@ -1,7 +1,7 @@
 ---
 home: true
 title: 首页
-# heroImage: /images/hero.png
+heroImage: /assets/img/hero.png
 actions:
   - text: Java
     link: /java/
