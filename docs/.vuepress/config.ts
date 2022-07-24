@@ -28,4 +28,11 @@ export default defineUserConfig({
       componentsDir: path.resolve(__dirname, "./components"),
     }),
   ],
+  alias: {
+    // https://vuepress-theme-hope.github.io/v2/zh/cookbook/advanced/replace.html
+    "@theme-hope/components/Sidebar": path.resolve(
+      __dirname,
+      "./components/Sidebar.vue"
+    ),
+  },
 });
