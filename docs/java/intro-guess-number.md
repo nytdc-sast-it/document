@@ -6,7 +6,7 @@ author: 葛涛宁
 在 [上一节](./intro-the-first-program.md) 中，我们编写了第一个 Java 程序。这节将会以一个
 **猜数字的小游戏** 为例，通过一个真实的小程序，使大家对于 Java 有更加深入的了解。
 
-本节完整的源代码：<https://github.com/nytdc-sast/guess_number>
+本节完整的源代码：<https://github.com/nytdc-sast-it/guess_number>
 
 :::tip
 本节主要涉及以下内容：
@@ -30,10 +30,10 @@ Java 工程。具体可以参考下图：
 ![idea-create-project.png](./img/intro-guess-number/idea-create-project.png)
 
 :::tip
-这里包名写的是 `org.tdsast`，下文中所有涉及包名的均以此为例。
+这里包名写的是 `com.sastit`，下文中所有涉及包名的均以此为例。
 :::
 
-在 `src/java/` 目录下创建 `org.tdsast` 包，并在其中创建 `GuessNumber` 类。
+在 `src/java/` 目录下创建 `com.sastit` 包，并在其中创建 `GuessNumber` 类。
 
 ![package.png](./img/intro-guess-number/package.png)
 
@@ -43,8 +43,8 @@ Java 工程。具体可以参考下图：
 **类**。同时，第一行也多出了 `package` 语句。因为 **包** 的概念较为复杂，在本节中不再介绍。
 
 ```java
-// src/main/java/org/tdsast/GuessNumber.java
-package org.tdsast;
+// src/main/java/com/sastit/GuessNumber.java
+package com.sastit;
 
 public class GuessNumber {
 }
@@ -58,8 +58,8 @@ public class GuessNumber {
 在 `main` 方法中，我们可以输出一行 `Hello World` 来保证我们已经成功地创建了该项目。
 
 ```java
-// src/main/java/org/tdsast/GuessNumber.java
-package org.tdsast;
+// src/main/java/com/sastit/GuessNumber.java
+package com.sastit;
 
 public class GuessNumber {
     public static void main(String[] args) {
@@ -73,8 +73,8 @@ public class GuessNumber {
 我们要做的第一步是获取用户输入的数字。
 
 ```java
-// src/main/java/org/tdsast/GuessNumber.java
-package org.tdsast;
+// src/main/java/com/sastit/GuessNumber.java
+package com.sastit;
 
 import java.util.Scanner;
 
@@ -175,7 +175,7 @@ System.out.println("你刚才输入的数字是 " + inputNum);
 ## 生成一个随机数字
 
 ```java
-package org.tdsast;
+package com.sastit;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -373,7 +373,7 @@ Exception in thread "main" java.util.InputMismatchException
     at java.base/java.util.Scanner.next(Scanner.java:1594)
     at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
     at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
-    at org.tdsast.GuessNumber.main(GuessNumber.java:17)
+    at com.sastit.GuessNumber.main(GuessNumber.java:17)
 ```
 
 本部分则是简要的介绍 Java 的异常处理。
@@ -428,7 +428,7 @@ public class GuessNumber {
 ```text
 生成的数字是：65
 ===== 猜数字游戏 =====
-请输入你猜的数字：tdsast
+请输入你猜的数字：sastit
 请输入数字！
 请输入你猜的数字：26
 你刚才输入的数字是 26
@@ -449,7 +449,7 @@ public class GuessNumber {
 最终的代码如下：
 
 ```java
-package org.tdsast;
+package com.sastit;
 
 import java.util.InputMismatchException;
 import java.util.Random;

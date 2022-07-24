@@ -1,5 +1,5 @@
 {
-  "name": "tdsast-document",
+  "name": "sastit-document",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:nytdc-sast/document.git",
