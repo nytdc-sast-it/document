@@ -5,6 +5,7 @@ import sidebar from "./sidebar";
 export default hopeTheme({
   hostname: "https://doc.sastit.com",
 
+  logo: "/assets/img/hero.png",
   repo: "nytdc-sast-it/document",
   docsDir: "docs",
 
