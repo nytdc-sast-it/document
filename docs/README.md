@@ -6,7 +6,6 @@ actions:
   - text: Java
     link: /java/
     type: primary
-footer: Copyright © 2022 SASTIT.COM
 ---
 ## 贡献指南
 

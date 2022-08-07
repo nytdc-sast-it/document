@@ -14,6 +14,10 @@ export default hopeTheme({
 
   pageInfo: ["ReadingTime", "Word", "PageView"],
 
+  footer: `<a href="http://beian.miit.gov.cn/" target="_blank">苏ICP备2022004206号-2</a> Copyright © 2022 SASTIT.COM`,
+  displayFooter: true,
+  copyright: false,
+
   plugins: {
     mdEnhance: {
       sup: true,
