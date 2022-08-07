@@ -32,6 +32,7 @@ export default hopeTheme({
       provider: "Waline",
       serverURL: "https://api.doc.sastit.com",
       pageview: true,
+      comment: false,
     },
   },
 });
