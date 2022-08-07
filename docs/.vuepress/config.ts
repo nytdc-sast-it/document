@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
+import { googleAnalyticsPlugin } from "@vuepress/plugin-google-analytics";
 import { path } from "@vuepress/utils";
 
 const isProd = process.env.NODE_ENV === "production";
@@ -26,6 +27,9 @@ export default defineUserConfig({
     }),
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, "./components"),
+    }),
+    googleAnalyticsPlugin({
+      id: "G-NVS7MEDHB6",
     }),
   ],
   alias: {
