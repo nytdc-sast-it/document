@@ -12,11 +12,18 @@ export default hopeTheme({
   navbar: navbar,
   sidebar: sidebar,
 
+  pageInfo: ["ReadingTime", "Word", "PageView"],
+
   plugins: {
     mdEnhance: {
       sup: true,
       sub: true,
       tex: true,
+    },
+    comment: {
+      provider: "Waline",
+      serverURL: "https://api.doc.sastit.com",
+      pageview: true,
     },
   },
 });
