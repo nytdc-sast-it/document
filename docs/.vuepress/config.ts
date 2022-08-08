@@ -32,11 +32,4 @@ export default defineUserConfig({
       id: "G-NVS7MEDHB6",
     }),
   ],
-  alias: {
-    // https://vuepress-theme-hope.github.io/v2/zh/cookbook/advanced/replace.html
-    "@theme-hope/components/Sidebar": path.resolve(
-      __dirname,
-      "./components/Sidebar.vue"
-    ),
-  },
 });
