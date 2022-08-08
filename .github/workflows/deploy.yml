@@ -3,7 +3,7 @@ name: Deployment
 on:
   push:
     branches:
-      - release
+      - main
 
 env:
   # 设置时区
@@ -18,6 +18,11 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - name: markdownlint-cli
+        uses: nosborn/github-action-markdown-cli@v3.0.1
+        with:
+          files: "."
+          config_file: .markdownlint.yaml
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 7
