@@ -21,10 +21,10 @@ export const javaSidebar: HopeThemeSidebarArrayConfig = [
         text: "语言基础",
         collapsable: true,
         children: [
-          // "basic-program-structure.md",
-          // "basic-name.md",
+          // "basic-simple-program.md",
+          "basic-name.md",
           "basic-comment.md",
-          // "basic-data-type.md",
+          "basic-data-type.md",
           // "basic-operator.md",
           // "basic-control-flow.md",
           // "basic-strings.md",
