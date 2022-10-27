@@ -13,7 +13,7 @@
   </NormalPage>
 </template>
 <script setup lang="ts">
-import NormalPage from "@theme-hope/components/NormalPage";
+import NormalPage from "vuepress-theme-hope/components/NormalPage";
 </script>
 <style scoped>
 .imgs {
