@@ -26,6 +26,7 @@ export default hopeTheme({
     mdEnhance: {
       sup: true,
       sub: true,
+      tex: true,
     },
     comment: {
       provider: "Waline",
